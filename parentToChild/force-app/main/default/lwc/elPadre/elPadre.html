@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="data Binding Example">
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-input 
+                type="text"
+                name="input1"
+                label="Change this text"
+                onchange={handleTextChange}
+                value={loQueEnviamos}>
+            </lightning-input>
+        </div>
+
+        <c-el-hijo loquellega={loQueEnviamos}></c-el-hijo>
+        
+    </lightning-card>
+</template>
